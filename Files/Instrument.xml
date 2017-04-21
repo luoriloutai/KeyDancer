@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Instruments>
+  <PIANO Name_CN="钢琴">
+    <Acoustic_Grand_Piano Name_CN="大钢琴" NO="0"/>
+    <Bright_Acoustic_Piano Name_CN="亮音大钢琴" NO="1"/>
+    <Electric_Grand_Piano Name_CN="电钢琴" NO="2"/>
+    <Honky_Tonk_Piano Name_CN="酒吧钢琴" NO="3"/>
+    <Rhodes_Piano Name_CN="练习音钢琴" NO="4"/>
+    <Chorused_Piano Name_CN="合唱加钢琴" NO="5"/>
+    <Harpsichord Name_CN="拨弦古钢琴" NO="6"/>
+    <Clavinet Name_CN="击弦古钢琴" NO="7"/>
+  </PIANO>
+  <CHROMATIC_PERCUSSION Name_CN="半音打击乐器">
+    <Celesta Name_CN="钢片琴" NO="8"/>
+    <Glockenspiel Name_CN="钟琴" NO="9"/>
+    <Music_Box Name_CN="八音盒" NO="10"/>
+    <Vibraphone Name_CN="电颤琴" NO="11"/>
+    <Marimba Name_CN="马林巴" NO="12"/>
+    <Xylophone Name_CN="木琴" NO="13"/>
+    <Tubular_Bells Name_CN="管钟" NO="14"/>
+    <Dulcimer Name_CN="扬琴" NO="15"/>
+  </CHROMATIC_PERCUSSION>
+  <ORGAN Name_CN="风琴">
+    <Hammond_Organ Name_CN="击杆风琴" NO="16"/>
+    <Percussive_Organ Name_CN="打击型风琴" NO="17"/>
+    <Rock_Organ Name_CN="摇滚风琴" NO="18"/>
+    <Church_Organ Name_CN="管风琴" NO="19"/>
+    <Reed_Organ Name_CN="簧风琴" NO="20"/>
+    <Accordion Name_CN="手风琴" NO="21"/>
+    <Harmonica Name_CN="口琴" NO="22"/>
+    <Tango_Accordian Name_CN="探戈手风琴" NO="23"/>
+  </ORGAN>
+  <GUITAR Name_CN="吉他">
+    <Acoustic_Guitar_nylon Name_CN="尼龙弦吉他" NO="24"/>
+    <Acoustic_Guitar_steel Name_CN="钢弦吉他" NO="25"/>
+    <Electric_Guitar_jazz Name_CN="爵士乐电吉他" NO="26"/>
+    <Electric_Guitar_clean Name_CN="清音电吉他" NO="27"/>
+    <Electric_Guitar_muted Name_CN="弱音电吉他" NO="28"/>
+    <Overdriven_Guitar Name_CN="驱动音效吉他" NO="29"/>
+    <Distortion_Guitar Name_CN="失真音效吉他" NO="30"/>
+    <Guitar_Harmonics Name_CN="吉他泛音" NO="31"/>
+  </GUITAR>
+  <BASS Name_CN="贝司">
+    <Acoustic_Bass Name_CN="原声贝司" NO="32"/>
+    <Electric_Bass_finger Name_CN="指拨电贝司" NO="33"/>
+    <Electric_Bass_pick Name_CN="拨片拨电贝司" NO="34"/>
+    <Fretless_Bass Name_CN="无品贝司" NO="35"/>
+    <Slap_Bass_1 Name_CN="击弦贝司1" NO="36"/>
+    <Slap_Bass_2 Name_CN="击弦贝司2" NO="37"/>
+    <Synth_Bass_1 Name_CN="合成贝司1" NO="38"/>
+    <Synth_Bass_2 Name_CN="合成贝司2" NO="39"/>
+  </BASS>
+  <SOLO_STRINGS Name_CN="弦乐独奏">
+    <Violin Name_CN="小提琴" NO="40"/>
+    <Viola Name_CN="中提琴" NO="41"/>
+    <Cello Name_CN="大提琴" NO="42"/>
+    <Contrabass Name_CN="低音提琴" NO="43"/>
+    <Tremolo_Strings Name_CN="弦乐震音" NO="44"/>
+    <Pizzicato_Strings Name_CN="弦乐拨奏" NO="45"/>
+    <Orchestral_Harp Name_CN="竖琴" NO="46"/>
+    <Timpani Name_CN="定音鼓" NO="47"/>
+  </SOLO_STRINGS>
+  <ENSEMBLE Name_CN="合唱或合奏">
+    <String_Ensemble_1 Name_CN="弦乐合奏1" NO="48"/>
+    <String_Ensemble_2 Name_CN="弦乐合奏2" NO="49"/>
+    <SynthStrings_1 Name_CN="合成弦乐1" NO="50"/>
+    <SynthStrings_2 Name_CN="合成弦乐2" NO="51"/>
+    <Choir_Aahs Name_CN="合唱_啊_音" NO="52"/>
+    <Voice_Oohs Name_CN="人声_嘟_音" NO="53"/>
+    <Synth_Voice Name_CN="合成人声" NO="54"/>
+    <Orchestra_Hit Name_CN="乐队打击乐" NO="55"/>
+  </ENSEMBLE>
+  <BRASS Name_CN="铜管乐器">
+    <Trumpet Name_CN="小号" NO="56"/>
+    <Trombone Name_CN="长号" NO="57"/>
+    <Tuba Name_CN="大号" NO="58"/>
+    <Muted_Trumpet Name_CN="弱音小号" NO="59"/>
+    <French_Horn Name_CN="圆号" NO="60"/>
+    <Brass_Section Name_CN="铜管组" NO="61"/>
+    <Synth_Brass_1 Name_CN="合成铜管1" NO="62"/>
+    <Synth_Brass_2 Name_CN="合成铜管2" NO="63"/>
+  </BRASS>
+  <REED Name_CN="哨片乐器">
+    <Soprano_Sax Name_CN="高音萨克斯" NO="64"/>
+    <Alto_Sax Name_CN="中音萨克斯" NO="65"/>
+    <Tenor_Sax Name_CN="次中音萨克斯" NO="66"/>
+    <Baritone_Sax Name_CN="上低音萨克斯" NO="67"/>
+    <Oboe Name_CN="双簧管" NO="68"/>
+    <English_Horn Name_CN="英国管" NO="69"/>
+    <Bassoon Name_CN="大管" NO="70"/>
+    <Clarinet Name_CN="单簧管" NO="71"/>
+  </REED>
+  <PIPE Name_CN="吹管乐器">
+    <Piccolo Name_CN="短笛" NO="72"/>
+    <Flute Name_CN="长笛" NO="73"/>
+    <Recorder Name_CN="竖笛" NO="74"/>
+    <Pan_Flute Name_CN="排笛" NO="75"/>
+    <Bottle_Blow Name_CN="吹瓶口" NO="76"/>
+    <Skakuhachi Name_CN="尺八" NO="77"/>
+    <Whistle Name_CN="哨" NO="78"/>
+    <Ocarina Name_CN="洋埙" NO="79"/>
+  </PIPE>
+  <SYNTH_LEAD Name_CN="合成主音">
+    <Lead_1_square Name_CN="合成主音1_方波" NO="80"/>
+    <Lead_2_sawtooth Name_CN="合成主音2_锯齿波" NO="81"/>
+    <Lead_3_calliope_lead Name_CN="合成主音3_汽笛风琴" NO="82"/>
+    <Lead_4_chiff_lead Name_CN="合成主音4_吹管" NO="83"/>
+    <Lead_5_charang Name_CN="合成主音5_吉他" NO="84"/>
+    <Lead_6_voice Name_CN="合成主音6_人声" NO="85"/>
+    <Lead_7_fifths Name_CN="合成主音7_五度" NO="86"/>
+    <Lead_8_bass_lead Name_CN="合成主音8_低音加主音" NO="87"/>
+  </SYNTH_LEAD>
+  <SYNTH_PAD Name_CN="合成柔音">
+    <Pad_1_new_age Name_CN="合成柔音1_新时代" NO="88"/>
+    <TimPad_2_warmpani Name_CN="合成柔音_暖音" NO="89"/>
+    <Pad_3_polysynth Name_CN="合成柔音3_复合成" NO="90"/>
+    <Pad_4_choir Name_CN="合成柔音4_合唱" NO="91"/>
+    <Pad_5_bowed Name_CN="合成柔音5_弓弦" NO="92"/>
+    <Pad_6_metallic Name_CN="合成柔音6_金属" NO="93"/>
+    <Pad_7_halo Name_CN="合成柔音7_光环" NO="94"/>
+    <Pad_8_sweep Name_CN="合成柔音8_扫弦" NO="95"/>
+  </SYNTH_PAD>
+  <SYNTH_EFFECTS Name_CN="合成特效">
+    <FX_1_rain Name_CN="合成特效1_雨" NO="96"/>
+    <FX_2_soundtrack Name_CN="合成特效2_音轨" NO="97"/>
+    <FX_3_crystal Name_CN="合成特效3_水晶" NO="98"/>
+    <FX_4_atmosphere Name_CN="合成特效4_大气" NO="99"/>
+    <FX_5_brightness Name_CN="合成特效5_亮音" NO="100"/>
+    <FX_6_goblins Name_CN="合成特效6_小妖" NO="101"/>
+    <FX_7_echoes Name_CN="合成特效7_回声" NO="102"/>
+    <FX_8_sci_fi Name_CN="合成特效8_科幻" NO="103"/>
+  </SYNTH_EFFECTS>
+  <ETHNIC Name_CN="民族乐器">
+    <Sitar Name_CN="锡塔尔" NO="104"/>
+    <Banjo Name_CN="班卓" NO="105"/>
+    <Shamisen Name_CN="三味线" NO="106"/>
+    <Koto Name_CN="筝" NO="107"/>
+    <Kalimba Name_CN="卡林巴" NO="108"/>
+    <Bagpipe Name_CN="风笛" NO="109"/>
+    <Fiddle Name_CN="古提琴" NO="110"/>
+    <Shanai Name_CN="唢呐" NO="111"/>
+  </ETHNIC>
+  <PERCUSSIVE Name_CN="打击乐">
+    <Tinkle_Bell Name_CN="铃铛" NO="112"/>
+    <Agogo Name_CN="拉丁打铃" NO="113"/>
+    <Steel_Drums Name_CN="钢鼓" NO="114"/>
+    <Woodblock Name_CN="木块" NO="115"/>
+    <Taiko_Drum Name_CN="太鼓" NO="116"/>
+    <Melodic_Tom Name_CN="嗵鼓" NO="117"/>
+    <Synth_Drum Name_CN="合成鼓" NO="118"/>
+    <Reverse_Cymbal Name_CN="镲波形反转" NO="119"/>
+  </PERCUSSIVE>
+  <SOUND_EFFECTS Name_CN="声音特效">
+    <Guitar_Fret_Noise Name_CN="磨弦声" NO="120"/>
+    <Breath_Noise Name_CN="呼吸声" NO="121"/>
+    <Seashore Name_CN="海浪声" NO="122"/>
+    <Bird_Tweet Name_CN="鸟鸣声" NO="123"/>
+    <Telephone_Ring Name_CN="电话铃声" NO="124"/>
+    <Helicopter Name_CN="直升机声" NO="125"/>
+    <Applause Name_CN="鼓掌声" NO="126"/>
+    <Gunshot Name_CN="枪声" NO="127"/>
+  </SOUND_EFFECTS>
+</Instruments>

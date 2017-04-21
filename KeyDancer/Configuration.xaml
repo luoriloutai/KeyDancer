@@ -1,0 +1,124 @@
+﻿<Window x:Class="KeyDancer.Configuration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="配置" Height="544" Width="927" Loaded="Window_Loaded" ResizeMode="NoResize" xmlns:my="clr-namespace:KeyDancer" Background="#009DCDDB" WindowStyle="None" Opacity="1" AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterOwner" Icon="/KeyDancer;component/Images/soft.ico" Activated="Window_Activated" Deactivated="Window_Deactivated">
+    <Border x:Name="border" BorderThickness="6" BorderBrush="#FF4085AD" CornerRadius="20" Background="#FF9DCDDB">
+        <StackPanel>
+            <Grid>
+                <TextBlock Padding="10" TextAlignment="Center" FontSize="15" FontWeight="Heavy">指舞者 - 设置</TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Slider x:Name="sliderOpacity" Width="200" ToolTip="拖动调节软件的不透明度" Margin="0,8,10,0" Value="1" AutoToolTipPlacement="TopLeft" Maximum="1" LargeChange="0.01" SmallChange="0.01" Minimum="0.2" TickPlacement="TopLeft" AutoToolTipPrecision="2" ValueChanged="sliderOpacity_ValueChanged"></Slider>
+                </StackPanel>
+            </Grid>
+           
+            <GroupBox Header="基本设置" Width="887" Height="72" Padding="6" Margin="4">
+                <Canvas>
+                    <Label Height="24" Padding="4" Canvas.Top="6">设备：</Label>
+                    <ComboBox x:Name="cbxDevice" Height="24" Width="70"  Canvas.Left="43" Canvas.Top="6"/>
+                    <Label Height="24" Margin="10,0,0,0" Canvas.Left="121" Canvas.Top="6" Padding="4">通道：</Label>
+                    <ComboBox Height="24" Width="70" Name="cbxChannel" Canvas.Left="174" Canvas.Top="6"/>
+                    <Label Canvas.Left="261" Canvas.Top="6" Content="乐器：" Height="24" Padding="4" />
+                    <ComboBox Canvas.Left="304" Canvas.Top="6" Height="24" Name="cbxInstrument" Width="162"/>
+                    <Label Canvas.Left="486" Canvas.Top="6" Content="奏速：" Height="24" Padding="4" />
+                    <Label Canvas.Left="610" Canvas.Top="6" Content="调式：" Height="24" Padding="4" />
+                    <ComboBox Canvas.Left="653" Canvas.Top="6" Height="24" Name="cbxMode" Width="54" SelectedIndex="0">
+                        <ComboBoxItem Content="C" />
+                        <ComboBoxItem Content="D" />
+                        <ComboBoxItem Content="E" />
+                        <ComboBoxItem Content="F" />
+                        <ComboBoxItem Content="G" />
+                        <ComboBoxItem Content="A" />
+                        <ComboBoxItem Content="B" />
+                        <ComboBoxItem Content="#C" />
+                        <ComboBoxItem Content="#D" />
+                        <ComboBoxItem Content="#F" />
+                        <ComboBoxItem Content="#G" />
+                        <ComboBoxItem Content="#A" />
+                    </ComboBox>
+                    <CheckBox Canvas.Left="725" Canvas.Top="11" Content="释放按键后停止发声" Height="16" Name="cbStopPlay" ToolTip="该选项用于不间断发声乐器（如小号），在释放按键后发声相应停止" />
+                    <my:KeyDancerComboBox Canvas.Left="529" Canvas.Top="6" x:Name="kdcbPlaySpeed" Width="60" />
+                </Canvas>
+            </GroupBox >
+            <GroupBox Header="控制器设置" Width="887" Margin="4" Padding="6" Height="320">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" >
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Left">
+                            <my:KeyDancerControlSet HorizontalAlignment="Left"  LabelText="音量（粗调）：" x:Name="VolumeCoarseTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="主音量（微调）：" x:Name="VolumeFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="情绪控制器（粗调）：" x:Name="MoodCoarseTuning" DataText="127" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="情绪控制器（微调）：" x:Name="MoodFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" x:Name="BreathCoarsingTuning" LabelText="呼吸控制器（粗调）：" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="呼吸控制器（微调）：" x:Name="BreathFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="平衡控制：" x:Name="Balance" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="平衡控制（微调）：" x:Name="BalanceFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" x:Name="TrillDepth" LabelText="颤音深度：" LabelWidth="70" LabelHeight="24" DataContainerWidth="60" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="颤音速度（微调）：" x:Name="TrillSpeedFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="声像调整（粗调）：" x:Name="SoundImageAdjustCoarseTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="声像调整（微调）：" x:Name="SoundImageAdjustFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="连滑音速度（粗调）：" x:Name="GlideSpeedCoarseTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="连滑音速度（微调）：" x:Name="GlideSpeedFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="放音时值：" x:Name="PlayDuration" />
+                        </StackPanel>
+                        <StackPanel Margin="6,0,0,0">
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="起音时值：" x:Name="BeginDuration" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="音色（XG）：" x:Name="Tone" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="亮音（XG）：" x:Name="HighSound" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" x:Name="PadalCoarseTuning" LabelText="踏板控制器（粗调）：" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="踏板控制器（微调）：" x:Name="PadalFineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="保持音踏板1：" x:Name="HoldVoicePedal" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="保持音踏板2：" x:Name="HoldVoicePedal_2" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="滑音：" x:Name="Glide" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="持续音：" x:Name="HoldVoice" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="弱音踏板：" x:Name="OffBeatPedal" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="连滑音踏板控制器：" x:Name="GlidePedal" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="变调：" x:Name="ModifiedTone" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="连滑音控制：" x:Name="GlideLiaison" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="混响效果深度：" x:Name="ReverberationDepth" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="合唱效果深度：" x:Name="ChorasEffectDepth" />
+                        </StackPanel>
+                        <StackPanel Margin="6,0,0,0">
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="效果FX控制1（微调）：" x:Name="FXEffect_1_FineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="效果FX控制2（微调）：" x:Name="FXEffect_2_FineTuning" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器（一）：" x:Name="General_1" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器（二）：" x:Name="General_2" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器（三）：" x:Name="General_3" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器（四）：" x:Name="General_4" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器（五）：" x:Name="General_5" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器（六）：" x:Name="General_6" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器：（七）" x:Name="General_7" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="一般控制器：（八）" x:Name="General_8" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="声音控制（一）：" x:Name="Sound_1" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="声音控制（二）：" x:Name="Sound_2" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="声音控制（三）：" x:Name="Sound_3" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="声音控制（四）：" x:Name="Sound_4" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="声音控制（五）：" x:Name="Sound_5" />
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Left" Margin="6,0,0,0">
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="高位元组数据输入：" x:Name="HighByteDataInput" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="低位元组数据输入：" x:Name="LowByteDataInput" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="未定义的效果深度（一）：" x:Name="UndefineEffectDepth_1" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="未定义的效果深度（二）：" x:Name="UndefineEffectDepth_2" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="移调器深度：" x:Name="TransitionDepth" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="数据累增：" x:Name="DataIncreaseByDegrees" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="数据递减：" x:Name="DataDecreaseByDegress" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="未登记的低元组数值：" x:Name="UnregisteredLowByteValue" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="未登记的高元组数值：" x:Name="UnregisteredHighByteValue" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="已登记的低元组数值" x:Name="RegisterdLowByteValue" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="已登记的高元组数值" x:Name="RegisterdHighByteVale" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" DataContainerWidth="60" LabelHeight="24" LabelText="插口选择：" LabelWidth="70" x:Name="SoketSelect" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="关闭所有声音"  x:Name="CloseAllSound" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="关闭所有控制器"  x:Name="CloseAllControler" />
+                            <my:KeyDancerControlSet HorizontalAlignment="Left" LabelText="音色库选择"  x:Name="ToneSelect" />
+                        </StackPanel>
+                    </DockPanel>
+                </ScrollViewer>
+            </GroupBox>
+            <StackPanel Height="60" Orientation="Horizontal" FlowDirection="RightToLeft">
+                <Button x:Name="btnCancel" Content="退出" Width="60" Click="btnCancel_Click" Margin="18,4,4,4" />
+                <Button x:Name="btnReset" Content="重置设置"  Width="60" Click="btnReset_Click" Margin="4" />
+                <Button x:Name="btnSave" Content="保存设置" Width="60" Click="btnSave_Click" Margin="4" />
+                
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>
