@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\Projects\KeyDancer\KeyDancer\obj\x86\Debug\
+D:\SourceCodes\KeyDancer\KeyDancer\obj\x86\Debug\
 KeyDancer
 none
 false
 DEBUG;TRACE
-G:\Projects\KeyDancer\KeyDancer\App.xaml
-6-1727960189
+D:\SourceCodes\KeyDancer\KeyDancer\App.xaml
+61929092455
 
-13-668390142
-15-1929119508
+13834466853
+151835611796
 About.xaml;Configuration.xaml;KeyDancerComboBox.xaml;KeyDancerControlSet.xaml;MainWindow.xaml;Themes\Generic.xaml;
 
-True
+False
 

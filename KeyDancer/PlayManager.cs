@@ -443,10 +443,15 @@ namespace KeyDancer
         {
             if (confData.IsOngoing)
             {
-                int code = pressedKeys[key];
-                CloseOctave(code);
+                if (pressedKeys.ContainsKey(key))
+                {
+                    int code = pressedKeys[key];
+                    CloseOctave(code);
+                    pressedKeys.Remove(key);
+                }
+                
             }
-            pressedKeys.Remove(key);
+            
         }
 
         /// <summary>

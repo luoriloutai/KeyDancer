@@ -24,3 +24,11 @@ G:\Projects\KeyDancer\MidiLib\obj\Debug\MidiLib.Properties.Resources.resources
 G:\Projects\KeyDancer\MidiLib\obj\Debug\MidiLib.csproj.GenerateResource.Cache
 G:\Projects\KeyDancer\MidiLib\obj\Debug\MidiLib.dll
 G:\Projects\KeyDancer\MidiLib\obj\Debug\MidiLib.pdb
+D:\SourceCodes\KeyDancer\MidiLib\bin\Debug\MidiLib.dll
+D:\SourceCodes\KeyDancer\MidiLib\bin\Debug\MidiLib.pdb
+D:\SourceCodes\KeyDancer\MidiLib\obj\Debug\MidiLib.csproj.AssemblyReference.cache
+D:\SourceCodes\KeyDancer\MidiLib\obj\Debug\MidiLib.Properties.Resources.resources
+D:\SourceCodes\KeyDancer\MidiLib\obj\Debug\MidiLib.csproj.GenerateResource.cache
+D:\SourceCodes\KeyDancer\MidiLib\obj\Debug\MidiLib.csproj.CoreCompileInputs.cache
+D:\SourceCodes\KeyDancer\MidiLib\obj\Debug\MidiLib.dll
+D:\SourceCodes\KeyDancer\MidiLib\obj\Debug\MidiLib.pdb
